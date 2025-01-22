@@ -59,4 +59,10 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "express": "^4.16.4",
-    "gh
+    "ghost": "^4.0.0"
+  },
+  "resolutions": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}
