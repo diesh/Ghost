@@ -133,4 +133,10 @@
     "ts-node": "10.9.2",
     "typescript": "5.4.5",
     "@testing-library/react-hooks": "8.0.1",
-    "sinon-c
+    "sinon-chai": "4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "ghost": "^5.107.2"
+  }
+}
