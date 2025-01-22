@@ -1,35 +1,43 @@
 {
-  "name": "ghost-project",
-  "version": "1.0.0",
-  "description": "A Ghost project with all dependencies resolved.",
-  "main": "index.js",
-  "dependencies": {
-    "ghost": "^5.107.2",
-    "knex": "^0.21.21",
-    "bookshelf": "^1.2.0",
-    "@testing-library/react-hooks": "8.0.1",
-    "react": "17.0.2",
-    "chai": "5.0.0",
-    "sinon-chai": "4.0.0"
-  },
-  "devDependencies": {
-    "sinon": "^12.0.0",
-    "jest": "^27.0.0",
-    "webpack": "^5.60.0",
-    "babel-loader": "^8.2.2"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "build": "npm run build",
-    "test": "npm run test"
-  },
+  "name": "ghost",
+  "version": "5.107.2",
+  "private": true,
   "engines": {
     "node": "16.x",
-    "npm": "7.x"
+    "npm": "8.x"
   },
-  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "knex": "^0.21.21",  
+    "bookshelf": "^1.2.0",
+    "chai": "^5.0.0",
+    "sinon-chai": "^4.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react": "^13.0.0",
+    "tryghost-activitypub": "https://github.com/diesh/tryghost-activitypub/releases/download/5.107.2/tryghost-activitypub-5.107.2.tgz"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "babel-eslint": "^10.1.0",
+    "jest": "^28.0.0",
+    "react-scripts": "5.0.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "browserslist": ">0.2%, not dead, not op_mini all",
   "resolutions": {
-    "knex": "^0.21.21",
-    "chai": "5.0.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }
