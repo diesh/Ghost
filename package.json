@@ -5,31 +5,31 @@
   "main": "index.js",
   "dependencies": {
     "ghost": "^5.107.2",
-    "knex": "^0.21.21",  // Downgraded knex to 0.21.21 for bookshelf compatibility
-    "bookshelf": "^1.2.0", // Compatible with knex@0.21.21
-    "@testing-library/react-hooks": "8.0.1",  // Compatible version with React 17
-    "react": "17.0.2",   // Downgraded to React 17 for compatibility
-    "chai": "5.0.0",     // Updated to satisfy sinon-chai
-    "sinon-chai": "4.0.0" // Compatible with chai 5.0.0
+    "knex": "^0.21.21",
+    "bookshelf": "^1.2.0",
+    "@testing-library/react-hooks": "8.0.1",
+    "react": "17.0.2",
+    "chai": "5.0.0",
+    "sinon-chai": "4.0.0"
   },
   "devDependencies": {
-    "sinon": "^12.0.0",   // Compatible sinon version with sinon-chai
-    "jest": "^27.0.0",    // Jest for testing
-    "webpack": "^5.60.0",  // Ensures Webpack compatibility
-    "babel-loader": "^8.2.2" // Ensures Babel transpilation compatibility
+    "sinon": "^12.0.0",
+    "jest": "^27.0.0",
+    "webpack": "^5.60.0",
+    "babel-loader": "^8.2.2"
   },
   "scripts": {
-    "start": "node server.js",  // Adjust based on your entry point
-    "build": "npm run build",   // Adjust if necessary for your build toolchain
-    "test": "npm run test"      // Placeholder for Jest tests
+    "start": "node server.js",
+    "build": "npm run build",
+    "test": "npm run test"
   },
   "engines": {
-    "node": "16.x",  // Node.js version 16 for compatibility
+    "node": "16.x",
     "npm": "7.x"
   },
   "license": "MIT",
   "resolutions": {
-    "knex": "^0.21.21",  // Force resolution of knex version across dependencies
-    "chai": "5.0.0"       // Force resolution of chai version
+    "knex": "^0.21.21",
+    "chai": "5.0.0"
   }
 }
