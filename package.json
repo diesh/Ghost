@@ -10,8 +10,16 @@
     "ghost/*",
     "apps/*"
   ],
+  "monorepo": {
+    "public": false,
+    "internalPackages": true,
+    "repo": "https://github.com/TryGhost/Ghost",
+    "scope": "@tryghost"
+  },
+  "eslintIgnore": [
+    "**/node_modules/**"
+  ],
   "scripts": {
-    "preinstall": "npm install --legacy-peer-deps",
     "archive": "nx run ghost:archive",
     "build": "nx run-many -t build",
     "build:clean": "nx reset && rimraf -g 'ghost/*/build' && rimraf -g 'ghost/*/tsconfig.tsbuildinfo'",
@@ -40,6 +48,10 @@
     "tb": "docker run --rm -v $(pwd):/ghost -w /ghost/ghost/tinybird -it tinybirdco/tinybird-cli-docker",
     "tb:update": "docker pull tinybirdco/tinybird-cli-docker"
   },
+  "resolutions": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
   "devDependencies": {
     "@actions/core": "1.11.1",
     "chalk": "4.1.2",
@@ -60,9 +72,5 @@
     "react-dom": "^17.0.0",
     "express": "^4.16.4",
     "ghost": "^4.0.0"
-  },
-  "resolutions": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
   }
 }
